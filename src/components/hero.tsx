@@ -2,9 +2,11 @@
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { useMediaQuery } from "usehooks-ts";
 
 interface HeroProps {
   imageUrl: string
+  mobileImageUrl: string
   logoUrl: string
   title: string
   content: string[]
@@ -14,25 +16,34 @@ interface HeroProps {
 const urls = ['siry-global', 'crefaz', 'cvc', 'recalcule']
 
 
-export function Hero({imageUrl, logoUrl, title, content, index}: HeroProps){
+export function Hero({imageUrl, mobileImageUrl, logoUrl, title, content, index}: HeroProps){
+  const matches = useMediaQuery('(min-width: 1024px)')
   const router = useRouter()
 
   const handleNextCase = () => {
-    const nextIndex = (index + 1) % urls.length; // Calculate the next index using modulo operator
+    const nextIndex = (index + 1) % urls.length; 
     const nextUrl = `/cases/${urls[nextIndex]}`;
     router.push(nextUrl);
   };
 
-
    return (
-        <section className="w-full h-[880px] lg:pt-20 pt-10 lg:px-[200px] px-6 relative">
+        <section className="w-full lg:h-[880px] h-[547px] lg:pt-20 pt-10 lg:px-[200px] px-6 relative">
+        <Image 
+          src={mobileImageUrl}
+          fill
+          objectFit="fill"
+          alt="Orbital Tech Logo"        
+          quality={70}
+          className={`animate-fade animate-duration-[1500ms] animate-ease-in -z-10 ${matches ? "" : "hidden"}`}
+          priority={true}
+        />
         <Image 
           src={imageUrl}
           fill
           objectFit="cover"
           alt="Orbital Tech Logo"        
           quality={70}
-          className="animate-fade-left animate-duration-[1500ms] animate-ease-in -z-10"
+          className={`animate-fade-left  animate-duration-[1500ms] lg:animate-ease-in -z-10 ${matches ? "hidden" : ""}`}
           priority={true}
         />
         <Image 
@@ -40,7 +51,7 @@ export function Hero({imageUrl, logoUrl, title, content, index}: HeroProps){
           width={155}
           height={24}
           alt="Orbital Tech Logo"        
-          className="mb-[235px] lg:w-[355px] lg:h-[55px]"
+          className="lg:mb-[235px] mb-[177px] lg:w-[355px] lg:h-[55px]"
           
         />
         <Image
