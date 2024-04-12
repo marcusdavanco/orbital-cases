@@ -16,11 +16,11 @@ export default function page() {
         title="Site institucional"
         index={0}
       />
-      {/* <Section 
+      <Section 
         dark 
         image={
           {
-            url: "/siry-global-contexto.png", 
+            url: "/imagem-contexto-01.png", 
             floating: true, 
             height: 542, 
             width: 729
@@ -57,7 +57,7 @@ export default function page() {
         dark
         title="Impacto" 
         content={['O impacto desse projeto foi significativo para o negócio da Siry Global. A nova presença online resultou em um aumento notável na interação dos clientes com a marca. O site institucional recebeu elogios pela sua usabilidade e design, refletindo positivamente na imagem da empresa.', 'O hotsite do Evolution, por sua vez, gerou um aumento nas consultas e interesse pelo produto, resultando em um aumento nas conversões e nas vendas.']}
-      /> */}
+      />
     </main>
   );
 }

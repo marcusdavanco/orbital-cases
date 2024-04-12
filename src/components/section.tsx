@@ -33,38 +33,38 @@ export function Section({
 
   return (
     <section
-      className={`px-[150px] py-[100px] ${
+      className={`lg:px-[150px] px-6  lg:py-[100px] py-[50px] ${
         dark ? "bg-[#1A1A1A]" : "bg-[#FFF]"
       } w-full ${customHeight ? "h-[597px]" : ""}`}
     >
-      <div className="flex">
-        <div className="mr-4 min-w-[729px] relative">
-          <h6
-            className={`text-3xl opacity-70 mb-4 ${
-              dark ? "text-white" : "text-[#1A1A1A]"
-            }`}
-          >
-            {title}
-          </h6>
+      <div className="flex flex-col lg:flex-row">
+        <h6
+          className={`lg:text-3xl text-sm lg:font-normal font-semibold opacity-70 lg:mb-4 mb-6 ${
+            dark ? "text-white" : "text-[#1A1A1A]"
+          }`}
+        >
+          {title}
+        </h6>
+        <div className="lg:mr-4 lg:min-w-[729px] relative  lg:order-1 order-2">          
           {image?.url && (
             <Image
               src={image.url}
               width={image.width}
               height={image.height}
               alt="Web e Mobile"
-              className={`${image.floating ? "absolute" : "relative"} animate-fade`}
+              className={`lg:${image.floating ? "absolute" : "relative"}  animate-fade`}
               loading="lazy"
             />
           )}
         </div>
-        <div className="flex flex-col mt-14 space-y-8">
+        <div className="flex flex-col lg:mt-14 space-y-8 lg:mb-0 mb-10 lg:order-1 order-1">
           {content?.map((paragraph, index) => {
             return (
               <p
                 key={index}
                 className={`${
                   dark ? "text-white" : "text-[#1A1A1A]"
-                } text-2xl max-w-[960px] `}
+                } lg:text-2xl text-base max-w-[960px] `}
               >
                 {paragraph.includes(":") && !paragraph.endsWith(":") ? (
                   <>
