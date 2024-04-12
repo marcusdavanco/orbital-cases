@@ -11,8 +11,7 @@ export default function page() {
       <Hero 
         logoUrl="/Logo-Siry.svg" 
         content={["UX/UI Design", "Web Development"]} 
-        imageUrl="/header-bg-1.jpg"
-        mobileImageUrl="/header-bg-1-mobile.jpg"
+        imageUrl={`${window.outerWidth >= 1024 ? "/header-bg-1.jpg" : "/header-bg-1-mobile.jpg"}`}
         title="Site institucional"
         index={0}
       />

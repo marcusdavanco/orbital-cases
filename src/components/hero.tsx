@@ -2,11 +2,9 @@
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { useMediaQuery } from "usehooks-ts";
 
 interface HeroProps {
   imageUrl: string
-  mobileImageUrl: string
   logoUrl: string
   title: string
   content: string[]
@@ -16,8 +14,7 @@ interface HeroProps {
 const urls = ['siry-global', 'crefaz', 'cvc', 'recalcule']
 
 
-export function Hero({imageUrl, mobileImageUrl, logoUrl, title, content, index}: HeroProps){
-  const matches = useMediaQuery('(min-width: 1024px)')
+export function Hero({imageUrl, logoUrl, title, content, index}: HeroProps){
   const router = useRouter()
 
   const handleNextCase = () => {
@@ -27,23 +24,14 @@ export function Hero({imageUrl, mobileImageUrl, logoUrl, title, content, index}:
   };
 
    return (
-        <section className="w-full lg:h-[880px] h-[547px] lg:pt-20 pt-10 lg:px-[200px] px-6 relative">
-        <Image 
-          src={mobileImageUrl}
-          fill
-          objectFit="fill"
-          alt="Orbital Tech Logo"        
-          quality={70}
-          className={`animate-fade animate-duration-[1500ms] animate-ease-in -z-10 ${matches ? "" : "hidden"}`}
-          priority={true}
-        />
+        <section className="w-full lg:h-[880px] h-[547px] lg:pt-20 pt-10 lg:px-[200px] px-6 relative">       
         <Image 
           src={imageUrl}
           fill
           objectFit="cover"
           alt="Orbital Tech Logo"        
           quality={70}
-          className={`animate-fade-left  animate-duration-[1500ms] lg:animate-ease-in -z-10 ${matches ? "hidden" : ""}`}
+          className={`animate-fade-left  animate-duration-[1500ms] lg:animate-ease-in -z-10`}
           priority={true}
         />
         <Image 
