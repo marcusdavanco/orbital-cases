@@ -29,10 +29,11 @@ export function Hero({imageUrl, logoUrl, title, content, index}: HeroProps){
         <Image 
           src={imageUrl}
           fill
-          objectFit="fill"
+          objectFit="cover"
           alt="Orbital Tech Logo"        
           quality={100}
           className="animate-fade-left animate-duration-[1500ms] animate-ease-in -z-10"
+          priority={true}
         />
         <Image 
           src="/Logo_Horizontal.svg"
@@ -40,7 +41,7 @@ export function Hero({imageUrl, logoUrl, title, content, index}: HeroProps){
           height={24}
           alt="Orbital Tech Logo"        
           className="mb-[235px] lg:w-[355px] lg:h-[55px]"
-          priority
+          
         />
         <Image
           src={logoUrl}
