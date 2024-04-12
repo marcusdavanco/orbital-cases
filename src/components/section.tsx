@@ -21,6 +21,16 @@ export function Section({
   content,
   customHeight,
 }: SectionProps) {
+
+  function formatText(paragraph: string, wordsToBold: string[]): JSX.Element {
+    const regex = new RegExp(`\\b(${wordsToBold.join("|")})\\b`, "gi");
+    const parts = paragraph.split(regex);
+    const formattedParts = parts.map((part) =>
+      wordsToBold.includes(part) ? <b key={part}>{part}</b> : part
+    );
+    return <span>{formattedParts}</span>;
+  }
+
   return (
     <section
       className={`px-[150px] py-[100px] ${
@@ -56,15 +66,15 @@ export function Section({
                   dark ? "text-white" : "text-[#1A1A1A]"
                 } text-2xl max-w-[960px] `}
               >
-                {paragraph.includes(":") ? (
+                {paragraph.includes(":") && !paragraph.endsWith(":") ? (
                   <>
                     <span className="font-bold">
-                      {`${paragraph.split(':')[0]}:`}
+                      {`${paragraph.split(":")[0]}:`}
                     </span>
                     <span>{`${paragraph.split(':')[1]}`}</span>
                   </>
                 ) : (
-                  paragraph
+                  formatText(paragraph, ['SPC', 'CRM Bitrix24', 'qualificação de leads'])
                 )}
               </p>
             );

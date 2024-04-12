@@ -7,9 +7,9 @@ export default function page() {
     <main className="flex min-h-screen flex-col items-center justify-between">
       <Hero 
         logoUrl="/logo-crefaz.svg" 
-        content={["Squads de desenvolvimento", "Teste", "Web Development"," Software Development"]} 
+        content={["Squads de desenvolvimento", "QA", "Web Development"," Software Development"]} 
         imageUrl="/header-bg-2.jpg" 
-        title="Gateway de empréstimo"
+        title="Central de Notificação"
         index={1}
       />
       <Section 
@@ -24,20 +24,20 @@ export default function page() {
           }
         }
         title="Contexto" 
-        content={['A Orbital Tech teve a oportunidade de colaborar com a Recalcule Crédito, um correspondente bancário focado em oferecer soluções de empréstimo que atendem às reais necessidades dos clientes.', 'Nossa parceria buscou melhorar a eficiência operacional da Recalcule, implementando soluções inovadoras para simplificar seus processos e proporcionar uma experiência mais ágil e personalizada para seus clientes.']}
+        content={['A Orbital Tech colaborou com a Crefaz, uma financeira de destaque no Paraná. Como consultoria de TI, nossa missão foi trazer soluções inovadoras para a Crefaz, ajudando a otimizar seus processos e melhorar sua eficiência operacional.']}
       />
       <Section         
         title="Desafio" 
-        content={['Nosso maior desafio foi auxiliar a Recalcule Crédito na transformação digital de seu negócio. Anteriormente, a maioria dos processos era realizada manualmente, o que limitava a eficiência e o alcance da empresa.', 'Além disso, desenvolver um Gateway de Empréstimo, uma aplicação de qualificação de leads e manter o website do cliente foram desafios técnicos significativos que enfrentamos.']}
+        content={['Nosso desafio foi criar soluções que simplificassem processos complexos, como o cruzamento de dados do SPC para negativação, integração com o CRM Bitrix24, central unificada de comunicação e a qualificação de leads.']}
       />
       <Section        
         dark 
         title="Tecnologia" 
-        content={['Java: Para o desenvolvimento do backend robusto e escalável.', 'Spring Boot: Framework utilizado para facilitar o desenvolvimento do backend. Ele oferece uma estrutura poderosa e fácil de usar para o desenvolvimento de aplicações Java, permitindo uma implementação rápida e eficiente dos serviços necessários pela Recalcule Crédito, como a integração com o CRM Bitrix24 e as instituições financeiras.', 'React: React é ideal para o desenvolvimento de interfaces de usuário interativas e responsivas, permitindo que os clientes da Recalcule Crédito tenham uma experiência de usuário moderna e intuitiva ao acessar o site e utilizar as ferramentas de simulação de empréstimos.', 'Wordpress: Utilizado para o website institucional da Recalcule Crédito. AWS (Amazon Web Services): Infraestrutura de hospedagem e implantação na nuvem.']}
+        content={['Para alcançar os objetivos propostos no projeto em parceria com a Crefaz, a Orbital Tech empregou uma variedade de tecnologias modernas e eficientes. As ferramentas fundamentais utilizadas foram:', 'PHP e Laravel 10: Framework PHP poderoso e escalável, utilizado em todas as partes da integração com o CRM Bitrix24, automação de cruzamento de dados do SPC e implementação do Serviço de Lead Qualificado. Essas tecnologias foram escolhidas estrategicamente para garantir eficiência, segurança e integração em todo o processo.', 'ASP.NET 7: Framework para o desenvolvimento da Central de Notificações. MongoDB: Banco de dados NoSQL altamente escalável e de alta performance. Kafka: Plataforma distribuída de streaming de eventos, crucial para a eficiência da Central De Notificações.', 'Azure: Serviços de computação em nuvem da Microsoft, fornecendo escalabilidade e confiabilidade para o CENO.']}
       />
       <Section                
         title="Soluções" 
-        content={['Integração com CRM Bitrix24: Implementamos uma integração completa com o CRM Bitrix24, permitindo à Recalcule Crédito centralizar e gerenciar todas as informações de clientes e leads em uma plataforma única. Isso melhorou significativamente a eficiência e a organização das operações da empresa.', 'Integração com Instituições Financeiras: Desenvolvemos integrações com diversas instituições financeiras, permitindo que a Recalcule Crédito consulte vários parceiros de empréstimos. Isso transformou a Recalcule Crédito em um Broker de empréstimo, oferecendo uma ampla gama de opções para seus clientes.', 'Gateway de Empréstimo: Construímos um Gateway de Empréstimo que permite aos clientes da Recalcule Crédito acessarem uma variedade de opções de empréstimo. Ao preencher o formulário no site, nossa API realiza a qualificação do lead, incluindo-o automaticamente no CRM Bitrix24 se tiver perfil para aderir ao empréstimo.', 'Aplicação de Lead Qualificado: Implementamos a solução Lead Qualificado, que automatiza a qualificação de leads. Quando um cliente preenche o formulário no site, nossa API realiza as verificações necessárias para qualificar o lead. Isso permitiu que a Recalcule Crédito trabalhasse apenas com leads qualificados, aumentando a eficiência e a taxa de conversão.', 'Manutenção do Website: Realizamos a manutenção contínua do website da Recalcule Crédito, garantindo que ele esteja sempre atualizado e seguindo as melhores práticas de mercado.']}
+        content={['Automação de Cruzamento de Dados: Desenvolvemos uma automação para o cruzamento de dados do SPC, eliminando o processo manual e reduzindo drasticamente multas que podiam chegar a 100 mil reais mensais.', 'Módulo CENO de Notificações: Criamos o CENO, uma plataforma centralizada para envio de mensagens (email, SMS, WhatsApp), unificando as comunicações de vários departamentos e permitindo um melhor controle de custos.', 'Serviço de Lead Qualificado: Implementamos o Lead Qualificado, uma aplicação que qualifica leads automaticamente. Quando um cliente preenche o formulário no site, nossa API realiza as regras necessárias para a qualificação desse lead. Se o lead possuir perfil para aderir ao empréstimo na conta de energia, ele é incluído no board do CRM Bitrix24. Isso permitiu que os vendedores trabalhassem apenas com leads qualificados, economizando tempo e aumentando a eficiência nas vendas.', 'Integração com o CRM Bitrix24: Realizamos a integração de sistemas da Crefaz com o CRM Bitrix24, proporcionando uma experiência mais integrada e eficiente para a equipe de vendas. Agora, todas as informações estão centralizadas em uma única plataforma, facilitando o gerenciamento de clientes e potencializando o processo de vendas.']}
       />
       <section className="h-[680px] w-full relative">
       <Image 
@@ -52,7 +52,7 @@ export default function page() {
       <Section  
       dark              
         title="Impacto" 
-        content={['Transformação Digital: A transformação digital implementada permitiu que a Recalcule Crédito automatizasse processos anteriormente manuais, aumentando a eficiência e reduzindo erros.', 'Aumento de Simulações: Com nossa solução, a Recalcule Crédito viu um aumento significativo nas simulações de empréstimos diárias, passando de 30 para 300 simulações por dia. Isso demonstra o aumento da interação dos clientes e a eficácia da plataforma de empréstimos.', 'Eficiência Operacional: A centralização das informações no CRM Bitrix24, juntamente com a automação da qualificação de leads, permitiu que a Recalcule Crédito otimizasse suas operações, concentrando-se em leads de maior qualidade e aumentando suas chances de conversão.']}
+        content={['Economia Financeira: A automação e qualificação de leads reduziram multas e horas de trabalho manual, gerando economia significativa.', 'Eficiência Operacional: O CENO e a integração com o CRM Bitrix24 simplificaram as comunicações internas e externas da empresa, melhorando a eficiência e o controle de custos.', 'Vendas mais Estratégicas: Com o Lead Qualificado, os vendedores passaram a trabalhar apenas com leads qualificados, direcionando seus esforços de forma mais estratégica e aumentando as taxas de conversão.', 'Essas soluções não apenas fortaleceram nossa parceria com a Crefaz, mas também demonstraram nosso compromisso em trazer inovação e eficiência para nossos clientes. Estamos ansiosos para continuar colaborando e buscando novas oportunidades de melhorar ainda mais os processos da Crefaz por meio da tecnologia.']}
       />
     </main>
   );
