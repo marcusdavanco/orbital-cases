@@ -46,6 +46,7 @@ export default function page() {
         objectFit="cover"
         alt="Idosa sorrindo"        
         quality={100}
+        loading="lazy"
       />
       </section>
       <Section  

@@ -46,6 +46,7 @@ export default function page() {
         objectFit="cover"
         alt="Página em diversos gadgets"        
         quality={100}
+        loading="lazy"
       />
       </section>      
       <Section         

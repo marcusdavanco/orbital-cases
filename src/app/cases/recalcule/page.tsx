@@ -46,6 +46,7 @@ export default function page() {
         objectFit="cover"
         alt="Casal de idosos sorrindo enquanto olham um tablet"        
         quality={100}
+        loading="lazy"
       />
       </section>
       <Section         

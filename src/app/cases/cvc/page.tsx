@@ -46,6 +46,7 @@ export default function page() {
         objectFit="cover"
         alt="Família Viajando"        
         quality={100}
+        loading="lazy"
       />
       </section>
       <Section  
