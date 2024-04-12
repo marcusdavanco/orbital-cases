@@ -7,7 +7,7 @@ export default function page() {
     <main className="flex min-h-screen flex-col items-center justify-between">
       <Hero 
         logoUrl="/logo-recalcule.svg" 
-        content={["Squads de desenvolvimento", "Teste", "Software Development"]} 
+        content={["Squads de desenvolvimento", "QA", "Software Development"]} 
         imageUrl="/header-bg-4.jpg" 
         title="Integração com CRM e Instituições Financeiras"
         index={3}
@@ -33,7 +33,7 @@ export default function page() {
       <Section
         dark        
         title="Tecnologia" 
-        content={['Java: Para o desenvolvimento do backend robusto e escalável.', 'Spring Boot: Framework utilizado para facilitar o desenvolvimento do backend. Ele oferece uma estrutura poderosa e fácil de usar para o desenvolvimento de aplicações Java, permitindo uma implementação rápida e eficiente dos serviços necessários pela Recalcule Crédito, como a integração com o CRM Bitrix24 e as instituições financeiras.', 'React: React é ideal para o desenvolvimento de interfaces de usuário interativas e responsivas, permitindo que os clientes da Recalcule Crédito tenham uma experiência de usuário moderna e intuitiva ao acessar o site e utilizar as ferramentas de simulação de empréstimos.', 'Wordpress: Utilizado para o website institucional da Recalcule Crédito. AWS (Amazon Web Services): Infraestrutura de hospedagem e implantação na nuvem.']}
+        content={['Para alcançar os objetivos propostos no projeto em parceria com a Recalcule Crédito, a Orbital Tech empregou uma variedade de tecnologias modernas e eficientes. As ferramentas fundamentais utilizadas foram:', 'Java: Para o desenvolvimento do backend robusto e escalável.', 'Spring Boot: Framework utilizado para facilitar o desenvolvimento do backend. Ele oferece uma estrutura poderosa e fácil de usar para o desenvolvimento de aplicações Java, permitindo uma implementação rápida e eficiente dos serviços necessários pela Recalcule Crédito, como a integração com o CRM Bitrix24 e as instituições financeiras.', 'React: React é ideal para o desenvolvimento de interfaces de usuário interativas e responsivas, permitindo que os clientes da Recalcule Crédito tenham uma experiência de usuário moderna e intuitiva ao acessar o site e utilizar as ferramentas de simulação de empréstimos.', 'Wordpress: Utilizado para o website institucional da Recalcule Crédito.', 'AWS (Amazon Web Services): Infraestrutura de hospedagem e implantação na nuvem.']}
       />
       <Section         
         title="Soluções" 
