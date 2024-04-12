@@ -29,7 +29,7 @@ export function Hero({imageUrl, logoUrl, title, content, index}: HeroProps){
         <Image 
           src={imageUrl}
           fill
-          objectFit="fill"
+          objectFit="cover"
           alt="Orbital Tech Logo"        
           quality={100}
           className="animate-fade-left animate-duration-[1500ms] animate-ease-in -z-10"
