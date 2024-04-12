@@ -9,7 +9,7 @@ export default function page() {
         logoUrl="/logo-recalcule.svg" 
         content={["Squads de desenvolvimento", "Teste", "Software Development"]} 
         imageUrl="/header-bg-4.jpg" 
-        title="Lorem ipsum dolor"
+        title="Integração com CRM e Instituições Financeiras"
         index={3}
       />
       <Section 

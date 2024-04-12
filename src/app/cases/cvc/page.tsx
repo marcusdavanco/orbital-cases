@@ -9,7 +9,7 @@ export default function page() {
         logoUrl="/logo-cvc.svg" 
         content={["Squads de desenvolvimento", "Teste", "Software Development"]} 
         imageUrl="/header-bg-3.jpg" 
-        title="Lorem ipsum dolor"
+        title="Gateway de Hotéis e Integração"
         index={2}
       />
       <Section 

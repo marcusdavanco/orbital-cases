@@ -9,7 +9,7 @@ export default function page() {
         logoUrl="/logo-crefaz.svg" 
         content={["Squads de desenvolvimento", "Teste", "Web Development"," Software Development"]} 
         imageUrl="/header-bg-2.jpg" 
-        title="Lorem ipsum dolor"
+        title="Gateway de empréstimo"
         index={1}
       />
       <Section 
