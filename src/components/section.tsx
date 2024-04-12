@@ -74,7 +74,7 @@ export function Section({
                     <span>{`${paragraph.split(':')[1]}`}</span>
                   </>
                 ) : (
-                  formatText(paragraph, ['SPC', 'CRM Bitrix24', 'qualificação de leads'])
+                  formatText(paragraph, ['SPC', 'CRM Bitrix24', 'qualificação de leads.'])
                 )}
               </p>
             );

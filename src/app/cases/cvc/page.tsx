@@ -7,9 +7,9 @@ export default function page() {
     <main className="flex min-h-screen flex-col items-center justify-between">
       <Hero 
         logoUrl="/logo-cvc.svg" 
-        content={["Squads de desenvolvimento", "Teste", "Software Development"]} 
+        content={["Squads de desenvolvimento", "QA", "Software Development"]} 
         imageUrl="/header-bg-3.jpg" 
-        title="Gateway de Hotéis e Integração"
+        title="Gateway de Hotéis"
         index={2}
       />
       <Section 
@@ -33,7 +33,7 @@ export default function page() {
       <Section        
         dark 
         title="Tecnologia" 
-        content={['Java: Para o desenvolvimento do backend robusto e escalável.', 'Spring Boot: Facilitação do desenvolvimento do backend.', 'Spring Webflux: Spring Webflux é uma extensão do Spring Boot que permite o desenvolvimento de aplicações reativas e baseadas em fluxo de dados. Isso proporciona uma arquitetura mais eficiente e escalável para lidar com operações assíncronas e concorrentes.', 'React: Desenvolvimento da interface de usuário moderna e interativa.', 'AWS (Amazon Web Services): Utilizamos a infraestrutura da AWS para hospedar e implantar as aplicações desenvolvidas para a CVC. Com a AWS, pudemos garantir alta disponibilidade, segurança e desempenho para as aplicações da CVC, atendendo às demandas de um ambiente empresarial moderno e dinâmico.']}
+        content={['Para alcançar os objetivos propostos no projeto em parceria com a CVC, a Orbital Tech empregou uma variedade de tecnologias modernas e eficientes. As ferramentas fundamentais utilizadas foram:', 'Java: Para o desenvolvimento do backend robusto e escalável.', 'Spring Boot: Facilitação do desenvolvimento do backend.', 'Spring Webflux: Spring Webflux é uma extensão do Spring Boot que permite o desenvolvimento de aplicações reativas e baseadas em fluxo de dados. Isso proporciona uma arquitetura mais eficiente e escalável para lidar com operações assíncronas e concorrentes.', 'React: Desenvolvimento da interface de usuário moderna e interativa.','AWS (Amazon Web Services): Utilizamos a infraestrutura da AWS para hospedar e implantar as aplicações desenvolvidas para a CVC. Com a AWS, pudemos garantir alta disponibilidade, segurança e desempenho para as aplicações da CVC, atendendo às demandas de um ambiente empresarial moderno e dinâmico.']}
       />
       <Section                
         title="Soluções" 
@@ -52,7 +52,7 @@ export default function page() {
       <Section  
       dark              
         title="Impacto" 
-        content={['Experiência Aprimorada para os Clientes: O gateway de hotéis e a integração com a API de polígonos melhoraram significativamente a experiência dos clientes ao buscar e selecionar hotéis. Agora, eles podem visualizar e selecionar opções com base em áreas geográficas específicas, garantindo uma escolha mais personalizada e precisa.', 'Eficiência Operacional: A centralização dos catálogos de hotéis e a automação do processo de busca e seleção reduziram o tempo e esforço necessários para os clientes encontrarem acomodações ideais. Além disso, a integração com a API de polígonos permitiu à CVC exibir os hotéis de forma mais precisa e relevante.', 'Parceria de Sucesso: A colaboração entre nossos squads de desenvolvimento, QA e Software Development foi essencial para o sucesso deste projeto. Trabalhamos em conjunto para superar os desafios técnicos e entregar uma solução de alta qualidade e funcionalidade para a CVC.']}
+        content={['Experiência Aprimorada para os Clientes: O gateway de hotéis e a integração com a API de polígonos melhoraram significativamente a experiência dos clientes ao buscar e selecionar hotéis. Agora, eles podem visualizar e selecionar opções com base em áreas geográficas específicas, garantindo uma escolha mais personalizada e precisa.', 'Eficiência Operacional: A centralização dos catálogos de hotéis e a automação do processo de busca e seleção reduziram o tempo e esforço necessários para os clientes encontrarem acomodações ideais. Além disso, a integração com a API de polígonos permitiu à CVC exibir os hotéis de forma mais precisa e relevante.','Parceria de Sucesso: A colaboração entre nossos squads de desenvolvimento, QA e Software Development foi essencial para o sucesso deste projeto. Trabalhamos em conjunto para superar os desafios técnicos e entregar uma solução de alta qualidade e funcionalidade para a CVC.']}
       />
     </main>
   );
