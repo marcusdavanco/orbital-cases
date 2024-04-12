@@ -10,6 +10,7 @@ export default function page() {
         content={["Squads de desenvolvimento", "Teste", "Web Development"," Software Development"]} 
         imageUrl="/header-bg-2.jpg" 
         title="Lorem ipsum dolor"
+        index={1}
       />
       <Section 
         dark 

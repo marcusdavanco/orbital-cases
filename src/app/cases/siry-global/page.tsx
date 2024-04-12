@@ -10,6 +10,7 @@ export default function page() {
         content={["UX/UI Design", "Web Development"]} 
         imageUrl="/header-bg-1.jpg" 
         title="Site institucional"
+        index={0}
       />
       <Section 
         dark 
