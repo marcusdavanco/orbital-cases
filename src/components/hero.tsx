@@ -49,7 +49,7 @@ export function Hero({imageUrl, logoUrl, title, content, index}: HeroProps){
           alt="Siry Logo"
           className="mb-5 lg:mb-7 animate-fade-down animate-duration-[1500ms] animate-ease-in lg:w-[132px] lg:h-[100px]"        
         />
-        <h2 className="text-white font-bold lg:text-7xl text-2xl mb-6 lg:mb-9 animate-fade-down animate-duration-[1500ms] animate-ease-in">
+        <h2 className="text-white font-bold lg:text-7xl text-2xl mb-6 lg:mb-9 animate-fade-down animate-duration-[1500ms] animate-ease-in lg:max-w-[45%]">
           {title}
         </h2>
         {
