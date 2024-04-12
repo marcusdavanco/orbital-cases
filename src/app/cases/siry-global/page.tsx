@@ -1,8 +1,16 @@
+'use client'
+
 import { Hero } from "@/components/hero";
 import { Section } from "@/components/section";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function page() {
+  const [width, setWidth] = useState(0);
+
+
+  
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <Hero 
@@ -12,7 +20,7 @@ export default function page() {
         title="Site institucional"
         index={0}
       />
-      <Section 
+      {/* <Section 
         dark 
         image={
           {
@@ -53,7 +61,7 @@ export default function page() {
         dark
         title="Impacto" 
         content={['O impacto desse projeto foi significativo para o negócio da Siry Global. A nova presença online resultou em um aumento notável na interação dos clientes com a marca. O site institucional recebeu elogios pela sua usabilidade e design, refletindo positivamente na imagem da empresa. ', 'O hot site do Evolution, por sua vez, gerou um aumento nas consultas e interesse pelo produto, resultando em um aumento nas conversões e nas vendas.']}
-      />
+      /> */}
     </main>
   );
 }

@@ -25,7 +25,7 @@ export function Hero({imageUrl, logoUrl, title, content, index}: HeroProps){
 
 
    return (
-        <section className="w-full h-[880px] pt-20 px-[200px] relative">
+        <section className="w-full h-[880px] lg:pt-20 pt-10 lg:px-[200px] px-6 relative">
         <Image 
           src={imageUrl}
           fill
@@ -36,34 +36,34 @@ export function Hero({imageUrl, logoUrl, title, content, index}: HeroProps){
         />
         <Image 
           src="/Logo_Horizontal.svg"
-          width={355}
-          height={55}
+          width={155}
+          height={24}
           alt="Orbital Tech Logo"        
-          className="mb-[235px]"
+          className="mb-[235px] lg:w-[355px] lg:h-[55px]"
           priority
         />
         <Image
           src={logoUrl}
-          width={132}
-          height={100}
+          width={66}
+          height={50}
           alt="Siry Logo"
-          className="mb-7 animate-fade-down animate-duration-[1500ms] animate-ease-in"        
+          className="mb-5 lg:mb-7 animate-fade-down animate-duration-[1500ms] animate-ease-in lg:w-[132px] lg:h-[100px]"        
         />
-        <h2 className="text-white font-bold text-7xl mb-9 animate-fade-down animate-duration-[1500ms] animate-ease-in">
+        <h2 className="text-white font-bold lg:text-7xl text-2xl mb-6 lg:mb-9 animate-fade-down animate-duration-[1500ms] animate-ease-in">
           {title}
         </h2>
         {
           content.map((service, index) => {
-            return <p key={index} className="text-white text-2xl mb-3 animate-fade-down animate-duration-[1500ms] animate-ease-in">{service}</p>
+            return <p key={index} className="text-white lg:text-2xl text-sm mb-3 animate-fade-down animate-duration-[1500ms] animate-ease-in">{service}</p>
           })
         }   
-        <div className="flex absolute bottom-20 right-20">
+        <div className="flex absolute lg:bottom-20 lg:right-20 bottom-14 right-4">
           <div className="w-full"></div>
-          <button className="text-3xl flex items-center hover:scale-110 transition ease-in delay-500"  onClick={handleNextCase}>
+          <button className="lg:text-3xl text-sm flex items-center hover:scale-110 transition ease-in delay-500"  onClick={handleNextCase}>
             <span className="whitespace-nowrap">
             Próximo case
             </span>
-            <ChevronRight size={30}/>
+            <ChevronRight className="lg:h-6 lg:w-6 h-4 w-4"/>
           </button>   
         </div>
         </section>
