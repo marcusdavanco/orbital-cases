@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useMediaQuery } from "usehooks-ts";
 
 interface SectionProps {
   dark?: boolean;
@@ -12,22 +13,31 @@ interface SectionProps {
     height: number;
     width: number;
   };
+  mobileImage?: {
+    url: string;
+    floating: boolean;
+    height: number;
+    width: number;
+  };
 }
 
 export function Section({
   dark = false,
   image,
+  mobileImage,
   title,
   content,
   customHeight,
 }: SectionProps) {
+  const matches = useMediaQuery('(min-width: 1024px)')
 
   function formatText(paragraph: string, wordsToBold: string[]): JSX.Element {
     const regex = new RegExp(`\\b(${wordsToBold.join("|")})\\b`, "gi");
-    const parts = paragraph.split(regex);
+    const parts = paragraph.split(regex);    
     const formattedParts = parts.map((part) =>
       wordsToBold.includes(part) ? <b key={part}>{part}</b> : part
     );
+    
     return <span>{formattedParts}</span>;
   }
 
@@ -46,6 +56,16 @@ export function Section({
           {title}
         </h6>
         <div className="lg:mr-4 lg:min-w-[729px] relative  lg:order-1 order-2">          
+          {mobileImage?.url && (
+            <Image
+              src={mobileImage.url}
+              width={mobileImage.width}
+              height={mobileImage.height}
+              alt="Web e Mobile"
+              className={`lg:${mobileImage.floating ? "absolute" : "relative"}  animate-fade ${matches ? "" : "hidden"}`}
+              loading="lazy"
+            />
+          )}          
           {image?.url && (
             <Image
               src={image.url}

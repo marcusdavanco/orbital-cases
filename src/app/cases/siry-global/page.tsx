@@ -43,9 +43,9 @@ export default function page() {
         title="Soluções" 
         content={['A solução que propusemos e implementamos foi um rebranding completo da presença online da Siry Global. Para o site institucional, criamos um design moderno e responsivo que reflete a essência da empresa de forma elegante e profissional. Já para o hotsite do Evolution, desenvolvemos uma plataforma interativa, destacando os recursos e benefícios do produto de forma cativante.', 'A integração de sistemas permitiu uma experiência contínua para os usuários, do site principal ao hotsite do produto.']}
       />
-      <section className="h-[823px] w-full relative pb-[100px] bg-white">
+      <section className="lg:h-[823px] h-[360px] w-full relative pb-[100px] bg-white">
       <Image 
-        src={"/hero12.png"}
+        src={`${window.outerWidth >= 1024 ? "/hero12.png" : "/hero12-mobile.jpg"}`}
         fill
         objectFit="cover"
         alt="Página em diversos gadgets"        
