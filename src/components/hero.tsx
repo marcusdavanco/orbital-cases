@@ -37,7 +37,7 @@ export function Hero({
           objectFit={"cover"}
           alt="Orbital Tech Logo"        
           quality={70}
-          className={`lg:animate-fade-left animate-fade-down  animate-duration-[1500ms] lg:animate-ease-in -z-10`}
+          className={`lg:animate-fade-left animate-fade  animate-duration-[1500ms] lg:animate-ease-in -z-10`}
           priority={true}
         />        
         <Image 
