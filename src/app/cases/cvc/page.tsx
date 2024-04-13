@@ -9,7 +9,7 @@ export default function page() {
       <Hero 
         logoUrl="/logo-cvc.svg" 
         content={["Squads de desenvolvimento", "QA", "Software Development"]}         
-        imageUrl={`${window.outerWidth >= 1024 ? "/header-bg-3.jpg" : "/header-bg-3-mobile.jpg"}`}        
+        imageUrl={`${typeof window !== "undefined" && window.outerWidth >= 1024 ? "/header-bg-3.jpg" : "/header-bg-3-mobile.jpg"}`}        
         title="Gateway de Hotéis"
         index={2}
       />
@@ -42,7 +42,7 @@ export default function page() {
       />
       <section className="lg:h-[914px] h-[353px] w-full relative">
       <Image         
-        src={`${window.outerWidth >= 1024 ? "/familia-viajando.png" : "/familia-viajando-mobile.jpg"}`}
+        src={`${typeof window !== "undefined" && window.outerWidth >= 1024 ? "/familia-viajando.png" : "/familia-viajando-mobile.jpg"}`}
         fill
         objectFit="cover"
         alt="Família Viajando"        

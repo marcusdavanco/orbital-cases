@@ -10,7 +10,7 @@ export default function page() {
       <Hero 
         logoUrl="/logo-crefaz.svg" 
         content={["Squads de desenvolvimento", "QA", "Web Development"," Software Development"]} 
-        imageUrl={`${window.outerWidth >= 1024 ? "/header-bg-2.jpg" : "/header-bg-2-mobile.jpg"}`}        
+        imageUrl={`${typeof window !== "undefined" && window.outerWidth >= 1024 ? "/header-bg-2.jpg" : "/header-bg-2-mobile.jpg"}`}        
         title="Central de Notificação"
         index={1}
       />
@@ -51,7 +51,7 @@ export default function page() {
       />
       <section className="lg:h-[680px] h-[184px] w-full relative">
       <Image 
-        src={`${window.outerWidth >= 1024 ? "/idosa-sorrindo-crefaz.png" : "/idosa-sorrindo-crefaz-mobile.jpg"}`}        
+        src={`${typeof window !== "undefined" && window.outerWidth >= 1024 ? "/idosa-sorrindo-crefaz.png" : "/idosa-sorrindo-crefaz-mobile.jpg"}`}        
         fill
         objectFit="cover"
         alt="Idosa sorrindo"        

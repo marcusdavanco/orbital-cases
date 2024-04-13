@@ -9,7 +9,7 @@ export default function page() {
       <Hero 
         logoUrl="/logo-recalcule.svg" 
         content={["Squads de desenvolvimento", "QA", "Software Development"]} 
-        imageUrl={`${window.outerWidth >= 1024 ? "/header-bg-4.jpg" : "/header-bg-4-mobile.jpg"}`}                
+        imageUrl={`${typeof window !== "undefined" && window.outerWidth >= 1024 ? "/header-bg-4.jpg" : "/header-bg-4-mobile.jpg"}`}                
         title="Integração com CRM e Instituições Financeiras"
         index={3}
       />
@@ -50,7 +50,7 @@ export default function page() {
       />
       <section className="lg:h-[914px] h-[306px] w-full relative">
       <Image         
-        src={`${window.outerWidth >= 1024 ? "/casal-idosos.jpg" : "/casal-idosos-mobile.jpg"}`}
+        src={`${typeof window !== "undefined" && window.outerWidth >= 1024 ? "/casal-idosos.jpg" : "/casal-idosos-mobile.jpg"}`}
         fill
         objectFit="cover"
         alt="Casal de idosos sorrindo"        

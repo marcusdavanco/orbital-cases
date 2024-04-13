@@ -11,7 +11,7 @@ export default function page() {
       <Hero 
         logoUrl="/Logo-Siry.svg" 
         content={["UX/UI Design", "Web Development"]} 
-        imageUrl={`${window.outerWidth >= 1024 ? "/header-bg-1.jpg" : "/header-bg-1-mobile.jpg"}`}
+        imageUrl={`${typeof window !== "undefined" && window.outerWidth >= 1024 ? "/header-bg-1.jpg" : "/header-bg-1-mobile.jpg"}`}
         title="Site institucional"
         index={0}
       />
@@ -52,7 +52,7 @@ export default function page() {
       />
       <section className="lg:h-[823px] h-[360px] w-full relative pb-[100px] bg-white">
       <Image 
-        src={`${window.outerWidth >= 1024 ? "/hero12.png" : "/hero12-mobile.jpg"}`}
+        src={`${typeof window !== "undefined" && window.outerWidth >= 1024 ? "/hero12.png" : "/hero12-mobile.jpg"}`}
         fill
         objectFit="cover"
         alt="Página em diversos gadgets"        
