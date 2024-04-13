@@ -42,7 +42,7 @@ export default function page() {
       />
       <section className="lg:h-[914px] h-[353px] w-full relative">
       <Image         
-        src={`${typeof window !== "undefined" && window.outerWidth >= 1024 ? "/familia-viajando.png" : "/familia-viajando-mobile.jpg"}`}
+        src={`${typeof window !== "undefined" && window.outerWidth >= 1024 ? "/familia-viajando.jpg" : "/familia-viajando-mobile.jpg"}`}
         fill
         objectFit="cover"
         alt="Família Viajando"        
