@@ -39,30 +39,32 @@ export function Hero({
           quality={70}
           className={`lg:animate-fade-left animate-fade  animate-duration-[1500ms] lg:animate-ease-in -z-10`}
           priority={true}
-        />
+        />        
         <Image 
           src="/Logo_Horizontal.svg"
           width={155}
           height={24}
           alt="Orbital Tech Logo"        
-          className="lg:mb-[235px] mb-[177px] lg:w-[355px] lg:h-[55px] animate-fade animate-duration-[1500ms] animate-ease-in"
+          className="lg:mb-[235px] mb-[177px] lg:w-[355px] lg:h-[55px] lg:animate-duration-[1500ms] animate-ease-in"
           
-        />
-        <Image
-          src={logoUrl}
-          width={66}
-          height={50}
-          alt="Company Logo"
-          className="mb-5 lg:mb-7 lg:animate-fade-down animate-fade animate-duration-[1500ms] animate-ease-in lg:w-[132px] lg:h-[100px]"        
-        />
-        <h2 className="text-white font-bold lg:text-7xl text-2xl mb-6 lg:mb-9 lg:animate-fade-down animate-fade animate-duration-[1500ms] animate-ease-in lg:max-w-[60%]">
-          {title}
-        </h2>
-        {
-          content.map((service, index) => {
-            return <p key={index} className="text-white lg:text-2xl text-sm mb-3 lg:animate-fade-down animate-fade animate-duration-[1500ms] animate-ease-in">{service}</p>
-          })
-        }   
+        />        
+        <div className="lg:animate-fade-down lg:animate-duration-[1500ms] animate-ease-in">
+          <Image
+            src={logoUrl}
+            width={66}
+            height={50}
+            alt="Company Logo"
+            className="mb-5 lg:mb-7 lg:w-[132px] lg:h-[100px]"        
+          />
+          <h2 className="text-white font-bold lg:text-7xl text-2xl mb-6 lg:mb-9 lg:max-w-[60%]">
+            {title}
+          </h2>
+          {
+            content.map((service, index) => {
+              return <p key={index} className="text-white lg:text-2xl text-sm mb-3 ">{service}</p>
+            })
+          }   
+        </div>
         <div className="flex absolute lg:bottom-20 lg:right-20 bottom-14 right-4">
           <div className="w-full"></div>
           <button className="lg:text-3xl text-sm flex items-center hover:scale-110 transition ease-in delay-500"  onClick={handleNextCase}>
