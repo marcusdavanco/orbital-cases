@@ -14,7 +14,13 @@ interface HeroProps {
 const urls = ['siry-global', 'crefaz', 'cvc', 'recalcule']
 
 
-export function Hero({imageUrl, logoUrl, title, content, index}: HeroProps){
+export function Hero({
+  imageUrl, 
+  logoUrl, 
+  title, 
+  content, 
+  index
+}: HeroProps){
   const router = useRouter()
 
   const handleNextCase = () => {
