@@ -8,7 +8,7 @@ export default function page() {
       <Hero 
         logoUrl="/logo-recalcule.svg" 
         content={["Squads de desenvolvimento", "QA", "Software Development"]} 
-        imageUrl="/header-bg-4.jpg" 
+        imageUrl={`${window.outerWidth >= 1024 ? "/header-bg-4.jpg" : "/header-bg-4-mobile.jpg"}`}                
         title="Integração com CRM e Instituições Financeiras"
         index={3}
       />
@@ -23,6 +23,14 @@ export default function page() {
             width: 569
           }
         }
+        mobileImage={
+          {
+            url: "/imagem-contexto-4-mobile.jpg", 
+            floating: false, 
+            height: 288, 
+            width: 369
+          }
+        }     
         title="Contexto" 
         content={['A Orbital Tech teve a oportunidade de colaborar com a Recalcule Crédito, um correspondente bancário focado em oferecer soluções de empréstimo que atendem às reais necessidades dos clientes.', 'Nossa parceria buscou melhorar a eficiência operacional da Recalcule, implementando soluções inovadoras para simplificar seus processos e proporcionar uma experiência mais ágil e personalizada para seus clientes.']}
       />
@@ -39,9 +47,9 @@ export default function page() {
         title="Soluções" 
         content={['Integração com CRM Bitrix24: Implementamos uma integração completa com o CRM Bitrix24, permitindo à Recalcule Crédito centralizar e gerenciar todas as informações de clientes e leads em uma plataforma única. Isso melhorou significativamente a eficiência e a organização das operações da empresa.', 'Integração com Instituições Financeiras: Desenvolvemos integrações com diversas instituições financeiras, permitindo que a Recalcule Crédito consulte vários parceiros de empréstimos. Isso transformou a Recalcule Crédito em um Broker de empréstimo, oferecendo uma ampla gama de opções para seus clientes.', 'Gateway de Empréstimo: Construímos um Gateway de Empréstimo que permite aos clientes da Recalcule Crédito acessarem uma variedade de opções de empréstimo. Ao preencher o formulário no site, nossa API realiza a qualificação do lead, incluindo-o automaticamente no CRM Bitrix24 se tiver perfil para aderir ao empréstimo.', 'Aplicação de Lead Qualificado: Implementamos a solução Lead Qualificado, que automatiza a qualificação de leads. Quando um cliente preenche o formulário no site, nossa API realiza as verificações necessárias para qualificar o lead. Isso permitiu que a Recalcule Crédito trabalhasse apenas com leads qualificados, aumentando a eficiência e a taxa de conversão.', 'Manutenção do Website: Realizamos a manutenção contínua do website da Recalcule Crédito, garantindo que ele esteja sempre atualizado e seguindo as melhores práticas de mercado.']}
       />
-      <section className="h-[914px] w-full relative">
-      <Image 
-        src={"/casal-idosos.jpg"}
+      <section className="lg:h-[914px] h-[306px] w-full relative">
+      <Image         
+        src={`${window.outerWidth >= 1024 ? "/casal-idosos.jpg" : "/casal-idosos-mobile.jpg"}`}
         fill
         objectFit="cover"
         alt="Casal de idosos sorrindo enquanto olham um tablet"        
