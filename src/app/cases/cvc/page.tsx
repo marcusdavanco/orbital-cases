@@ -7,8 +7,8 @@ export default function page() {
     <main className="flex min-h-screen flex-col items-center justify-between">
       <Hero 
         logoUrl="/logo-cvc.svg" 
-        content={["Squads de desenvolvimento", "QA", "Software Development"]} 
-        imageUrl="/header-bg-3.jpg" 
+        content={["Squads de desenvolvimento", "QA", "Software Development"]}         
+        imageUrl={`${window.outerWidth >= 1024 ? "/header-bg-3.jpg" : "/header-bg-3-mobile.jpg"}`}        
         title="Gateway de Hotéis"
         index={2}
       />
@@ -22,7 +22,7 @@ export default function page() {
             height: 379, 
             width: 540
           }
-        }
+        }        
         title="Contexto" 
         content={['A Orbital Tech teve o privilégio de colaborar com a CVC, uma das maiores agências de viagens da América Latina.', 'Assim como uma tradição de excelência, a CVC buscava aprimorar ainda mais a experiência dos seus clientes no processo de busca e reserva de hotéis em destinos variados.']}
       />
@@ -40,8 +40,8 @@ export default function page() {
         content={['Gateway de Hotéis: Desenvolvemos um gateway de hotéis que permite aos clientes da CVC acessarem os catálogos completos de hotéis de seus parceiros. Quando um cliente escolhe destino e data no site da CVC, uma requisição é feita para os parceiros, recuperando todos os hotéis na área selecionada.', 'Integração com API de Polígonos: Implementamos a integração com uma API de polígonos, possibilitando que a CVC cadastrasse os hotéis em regiões específicas. Isso permitiu aos clientes filtrar hotéis com base em áreas geográficas precisas, proporcionando uma experiência de busca mais refinada e eficiente.']}
       />
       <section className="h-[914px] w-full relative">
-      <Image 
-        src={"/familia-viajando.jpg"}
+      <Image         
+        src={`${window.outerWidth >= 1024 ? "/familia-viajando.png" : "/familia-viajando-mobile.jpg"}`}
         fill
         objectFit="cover"
         alt="Família Viajando"        
