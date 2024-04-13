@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import { Hero } from "@/components/hero";
 import { Section } from "@/components/section";

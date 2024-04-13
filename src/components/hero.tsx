@@ -31,7 +31,7 @@ export function Hero({imageUrl, logoUrl, title, content, index}: HeroProps){
           objectFit="cover"
           alt="Orbital Tech Logo"        
           quality={70}
-          className={`animate-fade-left  animate-duration-[1500ms] lg:animate-ease-in -z-10`}
+          className={`lg:animate-fade-left animate-fade  animate-duration-[1500ms] lg:animate-ease-in -z-10`}
           priority={true}
         />
         <Image 
@@ -39,22 +39,22 @@ export function Hero({imageUrl, logoUrl, title, content, index}: HeroProps){
           width={155}
           height={24}
           alt="Orbital Tech Logo"        
-          className="lg:mb-[235px] mb-[177px] lg:w-[355px] lg:h-[55px]"
+          className="lg:mb-[235px] mb-[177px] lg:w-[355px] lg:h-[55px] animate-fade animate-duration-[1500ms] animate-ease-in"
           
         />
         <Image
           src={logoUrl}
           width={66}
           height={50}
-          alt="Siry Logo"
-          className="mb-5 lg:mb-7 animate-fade-down animate-duration-[1500ms] animate-ease-in lg:w-[132px] lg:h-[100px]"        
+          alt="Company Logo"
+          className="mb-5 lg:mb-7 lg:animate-fade-down animate-fade animate-duration-[1500ms] animate-ease-in lg:w-[132px] lg:h-[100px]"        
         />
-        <h2 className="text-white font-bold lg:text-7xl text-2xl mb-6 lg:mb-9 animate-fade-down animate-duration-[1500ms] animate-ease-in lg:max-w-[60%]">
+        <h2 className="text-white font-bold lg:text-7xl text-2xl mb-6 lg:mb-9 lg:animate-fade-down animate-fade animate-duration-[1500ms] animate-ease-in lg:max-w-[60%]">
           {title}
         </h2>
         {
           content.map((service, index) => {
-            return <p key={index} className="text-white lg:text-2xl text-sm mb-3 animate-fade-down animate-duration-[1500ms] animate-ease-in">{service}</p>
+            return <p key={index} className="text-white lg:text-2xl text-sm mb-3 lg:animate-fade-down animate-fade animate-duration-[1500ms] animate-ease-in">{service}</p>
           })
         }   
         <div className="flex absolute lg:bottom-20 lg:right-20 bottom-14 right-4">

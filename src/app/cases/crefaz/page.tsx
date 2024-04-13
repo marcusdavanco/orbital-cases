@@ -1,3 +1,5 @@
+"use client"
+
 import { Hero } from "@/components/hero";
 import { Section } from "@/components/section";
 import Image from "next/image";
@@ -47,7 +49,7 @@ export default function page() {
         title="Soluções" 
         content={['Automação de Cruzamento de Dados: Desenvolvemos uma automação para o cruzamento de dados do SPC, eliminando o processo manual e reduzindo drasticamente multas que podiam chegar a 100 mil reais mensais.', 'Módulo CENO de Notificações: Criamos o CENO, uma plataforma centralizada para envio de mensagens (email, SMS, WhatsApp), unificando as comunicações de vários departamentos e permitindo um melhor controle de custos.', 'Serviço de Lead Qualificado: Implementamos o Lead Qualificado, uma aplicação que qualifica leads automaticamente. Quando um cliente preenche o formulário no site, nossa API realiza as regras necessárias para a qualificação desse lead. Se o lead possuir perfil para aderir ao empréstimo na conta de energia, ele é incluído no board do CRM Bitrix24. Isso permitiu que os vendedores trabalhassem apenas com leads qualificados, economizando tempo e aumentando a eficiência nas vendas.', 'Integração com o CRM Bitrix24: Realizamos a integração de sistemas da Crefaz com o CRM Bitrix24, proporcionando uma experiência mais integrada e eficiente para a equipe de vendas. Agora, todas as informações estão centralizadas em uma única plataforma, facilitando o gerenciamento de clientes e potencializando o processo de vendas.']}
       />
-      <section className="h-[680px] w-full relative">
+      <section className="lg:h-[680px] h-[184px] w-full relative">
       <Image 
         src={`${window.outerWidth >= 1024 ? "/idosa-sorrindo-crefaz.png" : "/idosa-sorrindo-crefaz-mobile.jpg"}`}        
         fill

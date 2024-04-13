@@ -1,3 +1,4 @@
+"use client"
 import { Hero } from "@/components/hero";
 import { Section } from "@/components/section";
 import Image from "next/image";
@@ -52,7 +53,7 @@ export default function page() {
         src={`${window.outerWidth >= 1024 ? "/casal-idosos.jpg" : "/casal-idosos-mobile.jpg"}`}
         fill
         objectFit="cover"
-        alt="Casal de idosos sorrindo enquanto olham um tablet"        
+        alt="Casal de idosos sorrindo"        
         quality={100}
         loading="lazy"
       />
