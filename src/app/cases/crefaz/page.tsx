@@ -8,7 +8,7 @@ export default function page() {
       <Hero 
         logoUrl="/logo-crefaz.svg" 
         content={["Squads de desenvolvimento", "QA", "Web Development"," Software Development"]} 
-        imageUrl="/header-bg-2.jpg" 
+        imageUrl={`${window.outerWidth >= 1024 ? "/header-bg-2.jpg" : "/header-bg-2-mobile.jpg"}`}        
         title="Central de Notificação"
         index={1}
       />
@@ -21,6 +21,14 @@ export default function page() {
             floating: false, 
             height: 397, 
             width: 484
+          }          
+        }
+        mobileImage={
+          {
+            url: "/imagem-contexto-02-mobile.png", 
+            floating: false, 
+            height: 266, 
+            width: 325
           }
         }
         title="Contexto" 
@@ -41,7 +49,7 @@ export default function page() {
       />
       <section className="h-[680px] w-full relative">
       <Image 
-        src={"/idosa-sorrindo-crefaz.jpg"}
+        src={`${window.outerWidth >= 1024 ? "/idosa-sorrindo-crefaz.png" : "/idosa-sorrindo-crefaz-mobile.jpg"}`}        
         fill
         objectFit="cover"
         alt="Idosa sorrindo"        

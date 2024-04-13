@@ -25,6 +25,14 @@ export default function page() {
             width: 729
           }
         }
+        mobileImage={
+          {
+            url: "/imagem-contexto-01-mobile.png", 
+            floating: false, 
+            height: 276, 
+            width: 371
+          }
+        }
         title="Contexto" 
         content={['A Orbital Tech teve a honra de colaborar com a Siry Global em um projeto empolgante que envolveu a modernização completa de sua presença online. Como consultoria de TI especializada, focamos em desenvolvimento web e UI/UX.', 'Nosso objetivo era elevar a identidade digital da Siry Global, especialmente para seu produto estrela, o Evolution.']}
         customHeight={597}
