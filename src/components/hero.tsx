@@ -34,7 +34,7 @@ export function Hero({
         <Image 
           src={imageUrl}
           fill
-          objectFit={typeof window !== "undefined" && window?.outerHeight >= 1024 ? "cover" : "fill"}
+          objectFit={"cover"}
           alt="Orbital Tech Logo"        
           quality={70}
           className={`lg:animate-fade-left animate-fade  animate-duration-[1500ms] lg:animate-ease-in -z-10`}
